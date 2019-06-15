@@ -43,3 +43,16 @@ function orderchick(sidedish) {
 }
 orderchick("noodles");
 orderchick();
+
+var company = new Object();
+company.name="facebook";
+console.log(company);
+company.ceo = new Object();
+company.ceo.firstname="mark";
+company.ceo.favcolor="blue";
+console.log(company);
+console.log(company.ceo);
+console.log(company["name"]);
+company["stock of company"]=110;
+console.log(company);
+
