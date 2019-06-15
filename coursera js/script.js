@@ -13,3 +13,33 @@ var a= function () {
 
 
 a();
+var x;
+x=5;
+if(x == undefined)
+	{console.log("x is undef");}
+else {console.log("x is def");}
+//math operation
+console.log((5+4)/3);
+console.log(undefined/5);
+//equality
+var x=4,y=4;
+if(x==y){
+	console.log("x==y");
+}
+x="4";
+if(x==y){
+	console.log("x==y");
+}
+if(x===y){
+	console.log("x===y");
+}
+else{
+	console.log("x not equal y");
+}
+
+function orderchick(sidedish) {
+	sidedish= sidedish || "whatever!";
+	console.log("chicken with "+ sidedish);
+}
+orderchick("noodles");
+orderchick();
