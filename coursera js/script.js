@@ -73,4 +73,31 @@ console.log("b.x updated");
 console.log(a);
 console.log(b);
 
+var array = new Array();
+array[0] ="arsh";
+array[1]=2;
+array[2]= function(name){
+	console.log("hello "+ name);
+};
+array[3]={course: "html, css & js"};
+console.log(array);
+console.log(array[1]);
+array[2](array[0]);
 
+function makemultiplier(multiplier){
+	function b(){
+		console.log("multiplier is "+ multiplier)
+	};
+	b();
+
+	return	function (x) {
+			return multiplier*x;
+		
+	};
+}
+var doubleall= makemultiplier(2);
+console.log(doubleall(10));
+
+(function(){
+	console.log("hello "+name);
+})();
